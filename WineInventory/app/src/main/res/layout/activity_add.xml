@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE7D3"
+    tools:context=".AddActivity">
+
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Name of wine" />
+    <EditText
+        android:id="@+id/ettype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etname"
+        android:layout_marginTop="30dp"
+        android:hint="Red or white" />
+
+    <EditText
+        android:id="@+id/etgrape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ettype"
+        android:hint="Type of grape:"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/etlocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etgrape"
+        android:hint="Enter location/region:"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/etquantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etlocation"
+        android:hint="Enter bottle quantity:"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/etprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etquantity"
+        android:hint="Enter price per bottle:"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etprice"
+        android:layout_centerHorizontal="true"
+        android:text="Create New Data" />
+
+
+</RelativeLayout>
